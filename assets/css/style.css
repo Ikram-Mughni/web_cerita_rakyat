@@ -1,0 +1,70 @@
+/* assets/style.css */
+
+/* --- Dasar & Tipografi --- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+a {
+    text-decoration: none;
+}
+
+/* --- Navbar --- */
+.navbar {
+    border-bottom: 5px solid #0d6efd; /* Garis bawah warna primary */
+}
+.navbar-brand {
+    letter-spacing: 1px;
+}
+
+/* --- Kartu (Card) --- */
+.card {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden; /* Pastikan gambar dan konten tidak keluar */
+}
+.card:hover {
+    transform: translateY(-5px); /* Efek angkat saat dihover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-img-top {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+/* --- Artikel/Postingan Detail --- */
+.article-content {
+    line-height: 1.8;
+    color: #343a40;
+}
+
+/* --- Komentar --- */
+.comment-list .card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    margin-top: 15px;
+}
+.comment-list .card-body {
+    padding: 1.25rem;
+}
+
+/* --- Tombol Interaktif --- */
+.btn-danger, .btn-primary {
+    transition: background-color 0.2s;
+}
+
+/* --- Area Konten Khusus (misalnya, jika tidak ada gambar) --- */
+.bg-light {
+    background-color: #e9ecef !important;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 768px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
